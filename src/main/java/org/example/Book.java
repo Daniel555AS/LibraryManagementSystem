@@ -1,6 +1,7 @@
 package org.example;
 
 public class Book {
+    
     private String id;
     private String title;
     private String author;
@@ -12,10 +13,36 @@ public class Book {
         this.author = author;
         this.isAvailable = true;
     }
+    
+    // Getters and Setters
+    public String getId() {
+        return id;
+    }
+    
+    public String getTitle() {
+        return title;
+    }
+    
+    public String getAuthor() {
+        return author;
+    }
 
-    // Getters and setters
-    // ...
-
+    public boolean isAvailable() {
+        return isAvailable;
+    }
+    
+    public void setId(String id) {
+        this.id = id;
+    }
+    
+    public void setTitle(String title) {
+        this.title = title;
+    }
+    
+    public void setAuthor(String author){
+        this.author = author;
+    }
+    
     // Additional methods
     public void markAsUnavailable() {
         this.isAvailable = false;
@@ -24,12 +51,5 @@ public class Book {
     public void markAsAvailable() {
         this.isAvailable = true;
     }
-
-    public String getId() {
-        return id;
-    }
-
-    public boolean isAvailable() {
-        return isAvailable;
-    }
-}
+    
+} // public class Book
